@@ -1,0 +1,14 @@
+/* Import Font Family */
+@font-face {
+    font-family: 'SpongeBob';
+    src: url(../../../../assets/font/SpongeboyRegular-gx2n6.otf);
+}
+
+.nav {
+    margin-bottom: 2em;
+}
+
+#navbarTitle {
+    font-family: 'SpongeBob';
+    letter-spacing: 0.05em;
+}

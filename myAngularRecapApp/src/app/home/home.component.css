@@ -1,0 +1,39 @@
+main {
+    background-color: darkslategrey;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+
+/* HomePage Title */
+  
+h2 {
+    font-size: 100px;
+    margin: 0;
+     writing-mode: vertical-lr;
+    text-align: center;
+    line-height: .9;
+}
+  
+.rotate {
+    transform: rotate(180deg);
+}
+  
+#test {
+    display: grid;
+    height: 80vh;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: max-content max-content;
+    font-family: 'didot';
+}
+
+
+
+#test {
+    border: 1px solid red;
+}
+
+#test2 {
+    border: 1px solid blue;
+}
