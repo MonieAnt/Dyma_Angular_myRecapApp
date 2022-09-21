@@ -1,7 +1,7 @@
 /* Import Font Family */
 @font-face {
     font-family: 'SpongeBob';
-    src: url(../../../../assets/font/SpongeboyRegular-gx2n6.otf);
+    src: url(../../../assets/font/SpongeboyRegular-gx2n6.otf);
 }
 
 .nav {
@@ -11,4 +11,12 @@
 #navbarTitle {
     font-family: 'SpongeBob';
     letter-spacing: 0.05em;
+}
+
+
+
+@media (max-width: 489px) {
+    .navbar-toggler {
+        margin: auto;
+    }
 }

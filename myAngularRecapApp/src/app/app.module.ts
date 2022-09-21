@@ -9,17 +9,21 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 
 // Shared :
-import { NavbarComponent } from './shared/navbar/navbar/navbar.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 // Chapter 2 :
 import { CompoComponent } from './demo/chapter2/2.1_composants/compo.component';
+import { TemplateComponent } from './demo/chapter2/2.2_templates/template.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
+
+    // Chapter 2
     CompoComponent,
+    TemplateComponent,
   ],
   imports: [
     BrowserModule,
