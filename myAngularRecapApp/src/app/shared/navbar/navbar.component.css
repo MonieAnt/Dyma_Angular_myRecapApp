@@ -15,6 +15,32 @@
 
 
 
+
+
+/* Wavy Shapes */
+.custom-shape-divider-top-1663788959 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: 5em;
+}
+
+.custom-shape-divider-top-1663788959 svg {
+    position: relative;
+    display: block;
+    width: calc(185% + 1.3px);
+    height: 147px;
+}
+
+.custom-shape-divider-top-1663788959 .shape-fill {
+    fill: #212529;
+}
+
+/* Media Queries */
+
 @media (max-width: 489px) {
     .navbar-toggler {
         margin: auto;

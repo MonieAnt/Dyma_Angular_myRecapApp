@@ -14,6 +14,11 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 // Chapter 2 :
 import { CompoComponent } from './demo/chapter2/2.1_composants/compo.component';
 import { TemplateComponent } from './demo/chapter2/2.2_templates/template.component';
+import { DataBindingComponent } from './demo/chapter2/2.3_dataBinding/data-binding.component';
+
+// Chapter 3 :
+import { MyCocktailAppComponent } from './demo/chapter3/my-cocktail-app/my-cocktail-app.component';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +29,8 @@ import { TemplateComponent } from './demo/chapter2/2.2_templates/template.compon
     // Chapter 2
     CompoComponent,
     TemplateComponent,
+    DataBindingComponent,
+    MyCocktailAppComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,4 +40,5 @@ import { TemplateComponent } from './demo/chapter2/2.2_templates/template.compon
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

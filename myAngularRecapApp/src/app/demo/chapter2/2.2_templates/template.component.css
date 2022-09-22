@@ -9,27 +9,6 @@ main {
     height: 90vh;
 }
 
-.custom-shape-divider-top-1663788959 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    margin-top: 5em;
-}
-
-.custom-shape-divider-top-1663788959 svg {
-    position: relative;
-    display: block;
-    width: calc(185% + 1.3px);
-    height: 147px;
-}
-
-.custom-shape-divider-top-1663788959 .shape-fill {
-    fill: #212529;
-}
-
 #test {
     display: grid;
     justify-content: center;
@@ -37,18 +16,18 @@ main {
     grid-template-columns: max-content max-content;
     font-family: 'didot';
     position: absolute;
-    right: 0;
-    top: 5em;
+    left: 0;
+    top: 8em;
     height: 90%;
 }
 
 #test2 {
     position: absolute;
-    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 5em;
+    top: 8em;
     height: 90%;
 }
 

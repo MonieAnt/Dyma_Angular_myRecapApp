@@ -1,0 +1,120 @@
+<main>
+    <div class="background">
+
+        <div class="row g-0 text-center">
+            <div class="col-6 col-md-4" id="test">
+                <h2 class="rotate">Chapter 2.3</h2>
+                <h2 class="">Data Bindings</h2>
+            </div>
+    
+            <div class="col-sm-6 col-md-8" id="test2">
+
+                <div class="row g-2 mt-5">
+
+                    <div class="col-6">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Two Ways Binding</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Importer depuis @angular/forms et ajouter FormsModule dans @NgModule - Imports</p>
+                                <p class="card-text">HTML : Input '['(ngModel)]="content"'<br>+ p : content <br>TS : content = ""</p>
+                                <input type="text" [(ngModel)]="content">
+                                <hr>
+                                <p>{{ content }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Directives</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Instruction donnée au DOM</h6>
+                                <p class="card-text">Types de directives : <br>-Composants <br> <br>-Directives d'attributs <br>(modifie comportement ou apparence d'un élément) <br> <br>-Directives structurelles <br>(modifie la structure du DOM - Ajoute supprime ou manipule les éléments)</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">NgIf</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Affichage ou non d'un élément sur le DOM</h6>
+                                <p class="card-text"> \*ngIf=\"true"' Bonjour <br> Si false, la balise p ne sera pas affiché. br Même dans le DOM</p>
+                                <p *ngIf="true">Bonjour</p>
+                                <p *ngIf="false">Bonjour</p>
+                                <hr>
+                                <button (click)="displayButton=!displayButton">Button</button>
+                                <p *ngIf="displayButton">Bonjour</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">NgStyle</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Modification du Style du DOM</h6>
+                                <p class="card-text">Variante de div style="background"</p>
+                                <p class="card-text">[ngStyle=""></p>
+                                <input type="text" [(ngModel)]="color">
+                                <hr>
+                                <p [ngStyle]="{
+                                    backgroundColor: color
+                                }">Bonjour
+                                </p>
+                                <p [style.backgroundColor]="color"
+                                >Hello World</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">NgClass</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Modification de la Class</h6>
+                                <p class="card-text">Test</p>
+                                <p class="card-text">[ngClass=""></p>
+                                <button (click)="color2='blue'">blue</button>
+                                <button (click)="color2='red'">red</button>
+                                <input type="text" [(ngModel)]="color2">
+                                <hr>
+                                <div
+                                    class="square" 
+                                    [ngClass]="{
+                                    bluesquare: color2 === 'blue',
+                                    redsquare: color2 === 'red'
+                                }">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">NgFor</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Pour itérer sur un Tableau</h6>
+                                <p class="card-text">*ngFor let user of users; //Optionel(let i = index) <br>i  -  user.nom </p>
+                                <hr>
+                                <div> 
+                                    <!-- Sans faire de ngFor, liste de tous les objects du tableau -->
+                                    {{ users }}
+                                </div>
+                                <ul>
+                                    <li *ngFor="let user of users; let i = index">{{ i }} - {{ user.nom }}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
