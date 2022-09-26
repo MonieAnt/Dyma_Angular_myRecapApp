@@ -1,3 +1,265 @@
-p {
-    margin-top: 20em;
+main {
+    background-color: #2f4f4f;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 140vh;
+}
+
+#test {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: max-content max-content;
+    font-family: 'didot';
+    position: absolute;
+    left: 0;
+    top: -5.5em;
+    height: 90%;
+}
+
+#test2 {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 15em;
+    height: auto;
+    margin-right: 2em;
+}
+
+
+/* HomePage Title */
+  
+h2 {
+    font-size: 100px;
+    margin: 0;
+    writing-mode: vertical-lr;
+    text-align: center;
+    line-height: .85;
+    color: white;
+}
+  
+.rotate {
+    transform: rotate(180deg);
+}
+
+/* Cocktail List */
+
+:root {
+    /* Choix couleur via flatuicolors.com et https://www.colorhexa.com */
+    --font-family: 'Roboto', sans-serif;
+    --primary:#6c5ce7;
+    --secondary:#a29bfe;
+    --accent:#e76c5c;
+    --lightgrey:#ddd;
+    --text-regular:#444;
+    --text-hover:#222;
+}
+
+ul {
+    list-style-type: none;
+    width: 400px;
+    height: max-content;
+    margin: 0;
+}
+
+li {
+  display: inline-block;
+  color: var(--text-regular);
+}
+
+li :hover {
+  color: white;
+  transition: color .8s ;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+#test2 {
+    font-family: var(--font-family);
+    color: var(--text-regular);
+}
+
+
+/* Card Perso */
+
+.header {
+  font-size: .35em;
+  width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    perspective: 80em;
+    display: grid;
+    transform-style: preserve-3d;
+  }
+  
+  .card {
+    grid-area: 1 / 1;
+    height: 600px;
+    width: 700px;
+    transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+    background: rgba(249, 198, 26, 0.88);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    color: #444;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    backface-visibility: hidden;
+    box-shadow: 0 10px 30px -3px rgba(0,0,0,.1);
+  }
+  
+  h1 {
+    font-size: 60px;
+    font-weight: 900;
+  }
+  
+  .card .enclosed {
+    background: #444;
+    line-height: 1;
+    color: rgba(249, 198, 26, 1);
+    padding: 0 5px;
+    display: inline-block;
+    transform: translate(-1px, 1px) scale(0.75);
+    transform-origin: right center;
+  }
+  
+  .wrapper:before {
+    --bw: 9px;
+    grid-area: 1 / 1;
+    content: '';
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    margin-top: calc(-1 * var(--bw));
+    margin-left: calc(-1 * var(--bw));
+    background: transparent;
+    transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+    pointer-events: none;
+    border: var(--bw) solid #ddd;
+    border-radius: 10px;
+    box-sizing: content-box;
+  }
+  
+  
+  .wrapper:hover > div,
+  .wrapper:hover:before {
+    transform: none;
+  }
+  
+  
+  .wrapper > div,
+  .wrapper:before {
+    will-change: transform;
+    transition: .3s transform cubic-bezier(.25,.46,.45,1);
+  }
+  
+  
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    background:
+      linear-gradient(to bottom right, #3C4BBD 15%, transparent),
+      radial-gradient(circle at 100% 0%, rgba(255,255,255,.2) 10%, transparent 20%) center center / 15px 15px,
+      linear-gradient(to bottom right, #3C4BBD, #57ADD8);
+  }
+
+
+/* Mise en Classe perso / Plutôt que d'utiliser Bootstrap */
+
+/* LayOut */
+
+.container {
+  display: block;
+  margin: 0;
+  margin-top: 1em;
+  font-size: .4em;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-justify-content-center {
+  justify-content: center;
+}
+
+.flex-justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
+.flex-align-items-between {
+  align-items: space-between;
+}
+
+.flex-fill {
+  flex: 1 1 auto;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+
+/* Debug */
+
+.d1 {
+  border: 1px solid green;
+}
+
+.d2 {
+  border: 1px solid red;
 }

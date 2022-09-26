@@ -1,0 +1,21 @@
+* {
+    font-size: .8em;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+
+/* Thème */
+
+.list-primary li {
+    padding: 10px 15px;
+    border: 1px solid #444;
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+
+.list-primary i {
+    margin-right: 10px;
+}

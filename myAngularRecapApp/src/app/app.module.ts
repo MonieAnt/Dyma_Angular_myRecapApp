@@ -18,6 +18,8 @@ import { DataBindingComponent } from './demo/chapter2/2.3_dataBinding/data-bindi
 
 // Chapter 3 :
 import { MyCocktailAppComponent } from './demo/chapter3/my-cocktail-app/my-cocktail-app.component';
+import { CocktailListComponent } from './demo/chapter3/cocktail-list/cocktail-list.component';
+import { CocktailDetailsComponent } from './demo/chapter3/cocktail-details/cocktail-details.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { MyCocktailAppComponent } from './demo/chapter3/my-cocktail-app/my-cockt
     TemplateComponent,
     DataBindingComponent,
     MyCocktailAppComponent,
+    CocktailListComponent,
+    CocktailDetailsComponent,
   ],
   imports: [
     BrowserModule,
