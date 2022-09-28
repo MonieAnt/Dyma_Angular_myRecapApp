@@ -1,0 +1,43 @@
+/* Button */
+
+.btn {
+    padding: 10px 15px;
+    background-color: white;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 700px;
+}
+
+.btn-primary {
+    background-color: #444;
+}
+.btn-primary:hover {
+    background-color: rgb(100, 100, 100);
+    transition: 0.4s;
+}
+
+
+/* Image */
+img {
+    height: 125px;
+    width: 125px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+p {
+    font-size: .5em;
+    font-weight: 400;
+}
+
+
+/* Strucutre */
+
+.mb-20 {
+    margin-bottom: 20px;
+  }
+
+.flex-50 {
+    flex: 1 1 50%;
+}

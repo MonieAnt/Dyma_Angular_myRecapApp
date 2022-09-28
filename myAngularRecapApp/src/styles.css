@@ -1,3 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Pour l'ensemble de tous les composants */
+
+
+
+
+/* Mise en Classe perso / Plutôt que d'utiliser Bootstrap */
+
+/* LayOut */
+
+.container {
+    display: block;
+    margin: 0;
+    margin-top: 1em;
+    font-size: .4em;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-justify-content-center {
+    justify-content: center;
+  }
+  
+  .flex-justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .flex-align-items-center {
+    align-items: center;
+  }
+  
+  .flex-align-items-between {
+    align-items: space-between;
+  }
+  
+  .flex-fill {
+    flex: 1 1 auto;
+  }
+
+  .flex-50 {
+    flex: 1 1 50%;
+  }
+  
+  .p-0 {
+    padding: 0;
+  }
+  
+  .p-10 {
+    padding: 10px;
+  }
+  
+  .p-20 {
+    padding: 20px;
+  }
+  
+  .m-10 {
+    margin: 10px;
+  }
+  
+  .m-20 {
+    margin: 20px;
+  }
+
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  
+  .w-50 {
+    width: 50%;
+  }
+  
+  
+  /* Debug */
+  
+  .d1 {
+    border: 1px solid green;
+  }
+  
+  .d2 {
+    border: 1px solid red;
+  }

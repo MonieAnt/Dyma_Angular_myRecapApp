@@ -9,13 +9,45 @@
 
 /* Thème */
 
+ul {
+    padding-left: 0;
+}
+
 .list-primary li {
     padding: 10px 15px;
     border: 1px solid #444;
     list-style-type: none;
     margin-bottom: 0px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    padding-left: 40px;
+}
+
+.list-primary li:hover {
+    background-color: #444;
+    color: white;
+    transition: .8s;
 }
 
 .list-primary i {
     margin-right: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: white;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 700px;
+}
+
+.btn-primary {
+    background-color: #444;
+}
+.btn-primary:hover {
+    background-color: rgb(100, 100, 100);
+    transition: 0.4s;
 }

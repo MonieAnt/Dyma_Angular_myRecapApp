@@ -1,9 +1,7 @@
 <h4 class="">Cocktails List</h4>
 
 <ul class="list-primary">
-    <li><i class="fa-solid fa-chevron-right"></i>Mojito</li>
-    <li><i class="fa-solid fa-chevron-right"></i>Mojito</li>
-    <li><i class="fa-solid fa-chevron-right"></i>Mojito</li>
+    <li *ngFor="let cocktail of cocktails"><i class="fa-solid fa-chevron-right"></i> {{ cocktail.name }} </li>
 </ul>
 
-<button>Ajouter un cocktail</button>
+<button class="btn btn-primary">Ajouter un cocktail</button>
