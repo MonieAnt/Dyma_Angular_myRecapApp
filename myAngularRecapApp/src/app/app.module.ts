@@ -21,6 +21,10 @@ import { MyCocktailAppComponent } from './demo/chapter3/my-cocktail-app/my-cockt
 import { CocktailListComponent } from './demo/chapter3/cocktail-list/cocktail-list.component';
 import { CocktailDetailsComponent } from './demo/chapter3/cocktail-details/cocktail-details.component';
 
+// Chapter 4 :
+import { InputComponent } from './demo/chapter4/input/input.component';
+import { OutputComponent } from './demo/chapter4/output/output.component';
+
 
 @NgModule({
   declarations: [
@@ -32,9 +36,15 @@ import { CocktailDetailsComponent } from './demo/chapter3/cocktail-details/cockt
     CompoComponent,
     TemplateComponent,
     DataBindingComponent,
+
+    // Chapter 3
     MyCocktailAppComponent,
     CocktailListComponent,
     CocktailDetailsComponent,
+
+    // Chapter 4
+    InputComponent,
+    OutputComponent
   ],
   imports: [
     BrowserModule,

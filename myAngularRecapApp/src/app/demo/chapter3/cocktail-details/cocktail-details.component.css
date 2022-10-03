@@ -27,8 +27,9 @@ img {
 
 
 p {
-    font-size: .5em;
+    font-size: .45em;
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 
