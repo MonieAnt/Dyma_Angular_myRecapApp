@@ -10,6 +10,8 @@ import { DataBindingComponent } from './demo/chapter2/2.3_dataBinding/data-bindi
 
 // Chapter 3
 import { MyCocktailAppComponent } from './demo/chapter3/my-cocktail-app/my-cocktail-app.component';
+
+// Chapter 4
 import { InputComponent } from './demo/chapter4/input/input.component';
 import { OutputComponent } from './demo/chapter4/output/output.component';
 

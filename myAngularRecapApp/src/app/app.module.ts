@@ -24,6 +24,7 @@ import { CocktailDetailsComponent } from './demo/chapter3/cocktail-details/cockt
 // Chapter 4 :
 import { InputComponent } from './demo/chapter4/input/input.component';
 import { OutputComponent } from './demo/chapter4/output/output.component';
+import { FruitComponent } from './demo/chapter4/input/fruit/fruit.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { OutputComponent } from './demo/chapter4/output/output.component';
 
     // Chapter 4
     InputComponent,
-    OutputComponent
+    OutputComponent,
+    FruitComponent
   ],
   imports: [
     BrowserModule,

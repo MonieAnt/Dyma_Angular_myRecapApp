@@ -1,4 +1,30 @@
 <main>
-    <p>input works!</p>
+    <div class="container d-flex flex-column flex-align-items-center" style="height: 100vh; padding-top: 20em;">
+        <h2>Liste de mes fruits :</h2>
+        <div class="d-flex flex-row">
+
+            <!-- Exemple Input -->
+            <!-- <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Test" name="name" id='name' required [(ngModel)]="fruit"/>
+                <label for="name" class="form__label">Type your Fruit here</label>
+            </div>
+            <button class="btn btn-primary m-10" (click)="addFruit()">Ajouter</button> -->
+
+            <!-- 36. #myinput Référence locale -->
+            <div class="form__group field">
+                <input #myinput type="input" class="form__field" placeholder="Test" name="name" id='name' required/>
+                <label for="name" class="form__label">Type your Fruit here - Ref Locale</label>
+            </div>
+            <button class="btn btn-primary m-10" (click)="addFruit2(myinput)">Ajouter</button>
+
+        </div>
+        <ul class="list-primary m-10" style="width: 540px;">
+            <!-- Première Méthode : Binding -->
+            <!-- <li *ngFor="let f of fruits">{{ f }}</li> -->
+
+            <!-- Deuxième Méthode : Input / OutPut -->
+            <app-fruit (deleteF)="deleteFruit($event)" [fruit]="f"  *ngFor="let f of fruits"></app-fruit>
+        </ul>
+    </div>
 </main>
 

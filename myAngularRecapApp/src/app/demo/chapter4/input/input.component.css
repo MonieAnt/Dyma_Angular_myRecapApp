@@ -1,3 +1,192 @@
 main {
-    margin-top: 10em;
+    margin-top: 0em;
+    background-color: #2f4f4f;
 }
+
+* {
+    font-size: 1.6em;
+}
+
+
+/* Input Perso */
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 350px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+
+
+/* Mise en Classe perso / Plutôt que d'utiliser Bootstrap */
+
+/* LayOut */
+
+.container {
+    display: block;
+    margin: 0;
+    margin-top: 1em;
+    font-size: .4em;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-justify-content-center {
+    justify-content: center;
+  }
+  
+  .flex-justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .flex-align-items-center {
+    align-items: center;
+  }
+  
+  .flex-align-items-between {
+    align-items: space-between;
+  }
+  
+  .flex-fill {
+    flex: 1 1 auto;
+  }
+  
+  .p-0 {
+    padding: 0;
+  }
+  
+  .p-10 {
+    padding: 10px;
+  }
+  
+  .p-20 {
+    padding: 20px;
+  }
+  
+  .m-10 {
+    margin: 10px;
+  }
+  
+  .m-20 {
+    margin: 20px;
+  }
+  
+  .w-50 {
+    width: 50%;
+  }
+
+  ul {
+    padding-left: 0;
+}
+
+.list-primary li {
+    padding: 10px 15px;
+    border: 1px solid #444;
+    list-style-type: none;
+    margin-bottom: 0px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    padding-left: 40px;
+}
+
+.list-primary li:hover {
+    background-color: #444;
+    color: white;
+    transition: .8s;
+}
+
+.list-primary i {
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: white;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 700px;
+}
+
+.btn-primary {
+    background-color: red;
+}
+.btn-primary:hover {
+    background-color: rgb(100, 100, 100);
+    transition: 0.4s;
+}
+  
+  
+  /* Debug */
+  
+  .d1 {
+    border: 1px solid green;
+  }
+  
+  .d2 {
+    border: 1px solid red;
+  }
